@@ -1,0 +1,22 @@
+{
+  "name": "vitality-ancient-wisdom",
+  "version": "1.0.0",
+  "description": "Holistic Coaching Website - Vitality & Ancient Wisdom",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'This is a static site. Open index.html in your browser or deploy to Netlify.'"
+  },
+  "keywords": [
+    "holistic",
+    "coaching",
+    "wellness",
+    "health",
+    "vitality"
+  ],
+  "author": "Vitality & Ancient Wisdom",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vitality-website.git"
+  }
+}

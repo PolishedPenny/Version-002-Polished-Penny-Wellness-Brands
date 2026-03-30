@@ -1,0 +1,38 @@
+# Netlify Configuration File
+# This file tells Netlify how to build and deploy your site
+
+[build]
+  # The directory to deploy (in this case, the root directory since we have static files)
+  publish = "."
+  # No build command needed for static sites
+  command = ""
+
+# Redirect rules for single-page applications (optional)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache settings
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# CSS cache
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# JavaScript cache
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Image cache
+[[headers]]
+  for = "*.{jpg,jpeg,png,gif,svg,webp}"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
